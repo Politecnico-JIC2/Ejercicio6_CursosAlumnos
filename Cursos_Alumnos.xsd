@@ -1,52 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:element name="ListaCursos"/>
+  <xs:element name="ListaCursos" type="ListaCursos"/>
   <xs:complexType name="Profesor">
     <xs:sequence>
-      <xs:element name="NRP">
-        <xs:simpleType>
-          <xs:restriction base="xs:string">
-            <xs:enumeration value="132452"/>
-            <xs:enumeration value="335265262"/>
-          </xs:restriction>
-        </xs:simpleType>
+      <xs:element name="NRP" type="xs:string">
       </xs:element>
-      <xs:element name="Nombre">
-        <xs:simpleType>
-          <xs:restriction base="xs:string">
-            <xs:enumeration value="Carmen"/>
-            <xs:enumeration value="Luis Miguel"/>
-          </xs:restriction>
-        </xs:simpleType>
+      <xs:element name="Nombre" type="xs:string">
       </xs:element>
-      <xs:element name="Apellido1">
-        <xs:simpleType>
-          <xs:restriction base="xs:string">
-            <xs:enumeration value="Villalobos"/>
-            <xs:enumeration value="Alvarez"/>
-          </xs:restriction>
-        </xs:simpleType>
+      <xs:element name="Apellido1" type="xs:string">
       </xs:element>
-      <xs:element type="xs:string" name="Apellido2" minOccurs="0"/>
+      <xs:element name="Apellido2" type="xs:string" minOccurs="0"/>
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="AsignaturaType">
+  <xs:complexType name="TipoAsignatura">
     <xs:sequence>
-      <xs:element name="Nombre">
-        <xs:simpleType>
-          <xs:restriction base="xs:string">
-            <xs:enumeration value="DPLM 2A"/>
-            <xs:enumeration value="DPAS 3"/>
-          </xs:restriction>
-        </xs:simpleType>
+      <xs:element name="Nombre" type="xs:string" >
       </xs:element>
       <xs:element type="Profesor" name="Profesor"/>
     </xs:sequence>
-    <xs:attribute type="xs:string" name="Codigo" use="optional"/>
+    <xs:attribute type="xs:string" name="Codigo" use="required"/>
   </xs:complexType>
   <xs:complexType name="ListaAsignaturas">
     <xs:sequence>
-      <xs:element name="Asignatura" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element type="TipoAsignatura" name="Asignatura" maxOccurs="unbounded" minOccurs="1"/>
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="Alumno">

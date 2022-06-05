@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ListaCursos SYSTEM "Cursos_Alumnos.dtd">
-<ListaCursos>
+<ListaCursos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:noNamespaceSchemaLocation="Cursos_Alumnos.xsd">
     <Curso>
         <Alumno>
             <DNI>1009383773</DNI>
