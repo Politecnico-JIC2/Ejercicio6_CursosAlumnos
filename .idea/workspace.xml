@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="93494365-ff82-4286-b6d3-1551fa51d5d6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cursos_Alumnos.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Cursos_Alumnos.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cursos_Alumnos.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/Cursos_Alumnos.xsd" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

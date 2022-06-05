@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:element name="ListaCursos" type="ListaCursos"/>
+  <xs:element name="ListaCursos" type="ListaCursos" />
   <xs:complexType name="Profesor">
     <xs:sequence>
       <xs:element name="NRP" type="xs:string">
@@ -30,12 +30,12 @@
       <xs:element type="xs:string" name="DNI"/>
       <xs:element type="xs:string" name="Nombre"/>
       <xs:element type="xs:string" name="Apellido1"/>
-      <xs:element type="ListaAsignaturas" name="ListaAsignaturas"/>
+      <xs:element type="ListaAsignaturas" name="ListaAsignaturas" minOccurs="1"/>
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="Curso">
     <xs:sequence>
-      <xs:element type="Alumno" name="Alumno"/>
+      <xs:element type="Alumno" name="Alumno" minOccurs="1"/>
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="ListaCursos">
