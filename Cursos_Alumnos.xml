@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE ListaCursos SYSTEM "Cursos_Alumnos.dtd">
+<ListaCursos>
+    <Curso>
+        <Alumno>
+            <DNI>1009383773</DNI>
+            <Nombre>Juan Jose</Nombre>
+            <Apellido1>Carmoma Rosas</Apellido1>
+            <ListaAsignaturas>
+                <Asignatura Codigo="ING00124">
+                    <Nombre>DPLM 2A</Nombre>
+                    <Profesor>
+                        <NRP>132452</NRP>
+                        <Nombre>Carmen</Nombre>
+                        <Apellido1>Villalobos</Apellido1>
+                    </Profesor>
+                </Asignatura>
+                <Asignatura Codigo="ING00568">
+                    <Nombre>DPAS 3</Nombre>
+                    <Profesor>
+                        <NRP>335265262</NRP>
+                        <Nombre>Luis Miguel</Nombre>
+                        <Apellido1>Alvarez</Apellido1>
+                        <Apellido2>Restrepo</Apellido2>
+                    </Profesor>
+                </Asignatura>
+            </ListaAsignaturas>
+        </Alumno>
+    </Curso>
+</ListaCursos>
