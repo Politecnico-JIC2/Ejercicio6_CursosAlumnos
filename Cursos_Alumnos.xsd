@@ -1,46 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:element name="ListaCursos" type="ListaCursos" />
-  <xs:complexType name="Profesor">
-    <xs:sequence>
-      <xs:element name="NRP" type="xs:string">
-      </xs:element>
-      <xs:element name="Nombre" type="xs:string">
-      </xs:element>
-      <xs:element name="Apellido1" type="xs:string">
-      </xs:element>
-      <xs:element name="Apellido2" type="xs:string" minOccurs="0"/>
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="TipoAsignatura">
-    <xs:sequence>
-      <xs:element name="Nombre" type="xs:string" >
-      </xs:element>
-      <xs:element type="Profesor" name="Profesor"/>
-    </xs:sequence>
-    <xs:attribute type="xs:string" name="Codigo" use="required"/>
-  </xs:complexType>
-  <xs:complexType name="ListaAsignaturas">
-    <xs:sequence>
-      <xs:element type="TipoAsignatura" name="Asignatura" maxOccurs="unbounded" minOccurs="1"/>
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="Alumno">
-    <xs:sequence>
-      <xs:element type="xs:string" name="DNI"/>
-      <xs:element type="xs:string" name="Nombre"/>
-      <xs:element type="xs:string" name="Apellido1"/>
-      <xs:element type="ListaAsignaturas" name="ListaAsignaturas" minOccurs="1"/>
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="Curso">
-    <xs:sequence>
-      <xs:element type="Alumno" name="Alumno" minOccurs="1"/>
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="ListaCursos">
-    <xs:sequence>
-      <xs:element type="Curso" name="Curso"/>
-    </xs:sequence>
-  </xs:complexType>
-</xs:schema>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:element name="ListaCursos" type="ListaCursos" />
+  <xsd:complexType name="Profesor">
+    <xsd:sequence>
+      <xsd:element name="NRP" type="xsd:string">
+      </xsd:element>
+      <xsd:element name="Nombre" type="xsd:string">
+      </xsd:element>
+      <xsd:element name="Apellido1" type="xsd:string">
+      </xsd:element>
+      <xsd:element name="Apellido2" type="xsd:string" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="TipoAsignatura">
+    <xsd:sequence>
+      <xsd:element name="Nombre" type="xsd:string" >
+      </xsd:element>
+      <xsd:element type="Profesor" name="Profesor"/>
+    </xsd:sequence>
+    <xsd:attribute type="xsd:string" name="Codigo" use="required"/>
+  </xsd:complexType>
+  <xsd:complexType name="ListaAsignaturas">
+    <xsd:sequence>
+      <xsd:element type="TipoAsignatura" name="Asignatura" maxOccurs="unbounded" minOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="Alumno">
+    <xsd:sequence>
+      <xsd:element type="xsd:string" name="DNI"/>
+      <xsd:element type="xsd:string" name="Nombre"/>
+      <xsd:element type="xsd:string" name="Apellido1"/>
+      <xsd:element type="ListaAsignaturas" name="ListaAsignaturas" minOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="Curso">
+    <xsd:sequence>
+      <xsd:element type="Alumno" name="Alumno" minOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ListaCursos">
+    <xsd:sequence>
+      <xsd:element type="Curso" name="Curso"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>
